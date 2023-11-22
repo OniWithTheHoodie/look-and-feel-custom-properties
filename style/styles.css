@@ -1,0 +1,56 @@
+:root{
+    --primary: gray; /*primary*/
+    --secondary: #58CD36; /*secondary*/
+    --tertiary: white; /*white*/
+    --accent: black; /*accent*/
+    --textSize: 20px; /*fontSize*/
+    --rules: 2; /*lineHeight*/
+    --responsiveSizing: 30em; /*responsiveness*/
+    --textDefinition: bold; /*FontWeight*/
+    --textType: "Oswald", sans-serif; /*FontFamily for text*/
+    --textHeading: 'Roboto', sans-serif;; /*Fontfamily for Heading */
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+article{
+    width: var(--responsiveSizing);
+    background-color: var(--primary);
+    margin-left: 40%;
+    margin-top: 15%;
+    padding: 20px;
+    line-height: var(--rules);
+    box-shadow: 5px 5px 5px var(--accent);
+}
+
+h1{
+    color: var(--secondary);
+    font-family: var(--textHeading);
+    padding-bottom: 5px;
+    padding: 5px;
+    padding-left: 15px;
+}
+
+p{
+    color: var(--tertiary);
+    font-family: var(--textType);
+    padding: 20px;
+    line-height: var(--rules);
+    font-weight: var(--textDefinition);
+}
+
+button{
+    margin-left: 15px;
+    padding: 10px;
+    color: var(--secondary);
+    font-weight: var(--textDefinition);
+    font-family: var(--textType);
+    background-color: var(--accent);
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px var(--tertiary);
+    font-family: var(--textHeading);
+}

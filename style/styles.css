@@ -1,56 +1,66 @@
+/* Custom property */
 :root{
     --primary: gray; /*primary*/
     --secondary: #58CD36; /*secondary*/
     --tertiary: white; /*white*/
     --accent: black; /*accent*/
-    --textSize: 20px; /*fontSize*/
+    --text-size: 20px; /*fontSize*/
     --rules: 2; /*lineHeight*/
-    --responsiveSizing: 30em; /*responsiveness*/
-    --textDefinition: bold; /*FontWeight*/
-    --textType: "Oswald", sans-serif; /*FontFamily for text*/
-    --textHeading: 'Roboto', sans-serif;; /*Fontfamily for Heading */
+    --text-definition: bold; /*FontWeight*/
+    --text-type: "Oswald", sans-serif; /*FontFamily for text*/
+    --text-heading: 'Roboto', sans-serif;; /*Fontfamily for Heading */
 }
 
-*{
+/* styling browser */
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-article{
-    width: var(--responsiveSizing);
+/* artikel */
+article {
+    width: 40em;
     background-color: var(--primary);
     margin-left: 40%;
     margin-top: 15%;
     padding: 20px;
     line-height: var(--rules);
     box-shadow: 5px 5px 5px var(--accent);
+    position: relative;
 }
 
-h1{
+/* header */
+h1 {
     color: var(--secondary);
-    font-family: var(--textHeading);
+    font-family: var(--text-heading);
     padding-bottom: 5px;
     padding: 5px;
     padding-left: 15px;
+    font-size: var(--text-size);
 }
 
-p{
+/* paragraag */
+p {
     color: var(--tertiary);
-    font-family: var(--textType);
+    font-family: var(--text-type);
     padding: 20px;
     line-height: var(--rules);
-    font-weight: var(--textDefinition);
+    font-weight: var(--text-definition);
+    font-size: 20px;
+    width: 30em;
 }
 
-button{
+/* button */
+button {
     margin-left: 15px;
     padding: 10px;
     color: var(--secondary);
-    font-weight: var(--textDefinition);
-    font-family: var(--textType);
+    font-weight: var(--text-definition);
+    font-family: var(--text-type);
     background-color: var(--accent);
     border-radius: 5px;
     box-shadow: 3px 3px 3px var(--tertiary);
-    font-family: var(--textHeading);
+    font-family: var(--text-heading);
+    font-size: var(--text-size);
 }
